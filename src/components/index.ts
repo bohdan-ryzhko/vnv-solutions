@@ -3,6 +3,7 @@ import { MagnitButton } from "./MagnitButton";
 import { Header } from "./Header";
 import { Title } from "./Title";
 import { Logo } from "./Logo";
+import { Carousel } from "./Carousel";
 
 export {
   Header,
@@ -10,4 +11,5 @@ export {
   Title,
   MagnitButton,
   Logo,
+  Carousel,
 }

@@ -9,10 +9,10 @@ type ServiceItem = {
 
 const servicesNavigation: ServiceItem[] = [
   { text: "Landing page", id: 0 },
-  { text: "Багатосторінковий сайт", id: 1 },
-  { text: "Інтернет магазин", id: 2 },
-  { text: "Аудит сайту", id: 3 },
-  { text: "Індивідуальна консультація", id: 4 },
+  { text: "Multi-page website", id: 1 },
+  { text: "Online store", id: 2 },
+  { text: "Website audit", id: 3 },
+  { text: "Individual consultation", id: 4 },
 ];
 
 export const ServicesNavigation: FC = () => {

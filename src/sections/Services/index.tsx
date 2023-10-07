@@ -11,7 +11,7 @@ export const Services: FC = () => {
     <section className={sass.servicesSection}>
       <Container>
         <div className={sass.servicesInner}>
-          <Title title="Послуги" />
+          <Title title="Services" />
           <div className={sass.servicesBody}>
             <ServicesNavigation />
             <ServiceDescription />

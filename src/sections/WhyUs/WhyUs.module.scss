@@ -1,0 +1,10 @@
+@import "../../sass/helper";
+
+.sectionWhyUs {
+	height: 500px;
+	margin-bottom: 50px;
+
+	@include desktop {
+		height: 700px;
+	}
+}
