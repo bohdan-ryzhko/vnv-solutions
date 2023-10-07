@@ -1,0 +1,54 @@
+@import "../../../../sass/helper";
+
+.navigation {
+	display: none;
+	@include tablet {
+		display: block;
+	}
+}
+
+.navigationList {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+.navigationItem {
+	overflow: hidden;
+	position: relative;
+}
+
+.navigationLink {
+	text-transform: uppercase;
+
+	@include tablet {
+		&:hover .textLinkTop {
+			transform: translateY(-100%);
+		}
+
+		&:hover .textLinkBottom {
+			transform: translateY(-100%);
+		}
+	}
+}
+
+.textLinkTop,
+.textLinkBottom {
+	@include tablet {
+		transition: transform 0.3s ease;
+	}
+}
+
+.textLinkBottom {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+
+	@include tablet {
+		width: 100%;
+		height: 100%;
+		visibility: visible;
+		position: absolute;
+	}
+}

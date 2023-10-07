@@ -1,0 +1,19 @@
+@import "../../../../sass/helper";
+
+.backdrop,
+.backdropActive {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	background-color: $secondary-color;
+	transition: all 700ms ease;
+	z-index: 90;
+}
+
+.backdrop {
+	top: -100%;
+}
+
+.backdropActive {
+	top: 0;
+}
