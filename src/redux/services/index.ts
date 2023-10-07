@@ -1,7 +1,7 @@
 import { fetchServices } from "./operations";
-import { setCurrentPage } from "./slice";
+import { setCurrentService } from "./slice";
 
 export {
   fetchServices,
-  setCurrentPage,
+  setCurrentService,
 };

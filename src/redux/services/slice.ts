@@ -6,7 +6,7 @@ import { fulfilledServices, pendingServices, rejectedServices } from "./handlers
 
 const initialState: ServicesSliceType = {
   services: [],
-  currentPage: 0,
+  currentService: 0,
   isLoad: false,
   error: null,
 };
@@ -15,8 +15,8 @@ const servicesSlice = createSlice({
   name: "services",
   initialState,
   reducers: {
-    setCurrentPage(state, action: PayloadAction<number>) {
-      state.currentPage = action.payload;
+    setCurrentService(state, action: PayloadAction<number>) {
+      state.currentService = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -27,5 +27,5 @@ const servicesSlice = createSlice({
   }
 });
 
-export const { setCurrentPage } = servicesSlice.actions;
+export const { setCurrentService } = servicesSlice.actions;
 export const servicesReducer = servicesSlice.reducer;

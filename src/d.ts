@@ -9,11 +9,12 @@ export type Service = {
   benefits: Benefit[],
   benefitTitle: string,
   image: string,
+  id: string,
 };
 
 export type ServicesSliceType = {
   services: Service[],
-  currentPage: number,
+  currentService: number,
   isLoad: boolean,
   error: unknown,
 }
