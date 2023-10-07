@@ -3,8 +3,6 @@ import { FC } from "react";
 import { Service } from "../../../d";
 import { useAnimatedServices } from "../../../hooks";
 
-import 'animate.css';
-
 type AnimatedBoxesType = {
   currentService: Service,
 }

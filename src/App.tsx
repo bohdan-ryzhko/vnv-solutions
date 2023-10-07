@@ -1,11 +1,14 @@
 import { FC } from "react";
 import { Header } from "./components";
-import { Services } from "./sections";
+import { Hero, Services } from "./sections";
+
+import 'animate.css';
 
 const App: FC = () => {
   return (
     <div className="App">
       <Header />
+      <Hero />
       <Services />
     </div>
   );

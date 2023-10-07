@@ -1,0 +1,32 @@
+@import "../../sass/helper";
+
+.hero {
+	height: calc(100vh - 200px);
+}
+
+.heroInner {
+	height: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.heroText {
+	display: flex;
+	flex-direction: column;
+	gap: 150px;
+}
+
+.heroTitle {
+	font-weight: 100;
+	font-size: 30px;
+
+	@include mobile {
+		font-size: 50px;
+	}
+
+	@include tablet {
+		font-size: 70px;
+	}
+}
