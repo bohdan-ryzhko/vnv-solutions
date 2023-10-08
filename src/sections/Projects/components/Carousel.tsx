@@ -8,6 +8,7 @@ import CarouselImg3 from "../../../assets/projects/carousel-img-3.jpg"
 import CarouselImg4 from "../../../assets/projects/carousel-img-4.jpg"
 import CarouselImg5 from "../../../assets/projects/carousel-img-5.jpg"
 import { WantButton } from "../../../components";
+import { CSSProperties } from "react";
 
 const projectsSlides = [
   { text: "TechPro Solutions", id: "1", image: CarouselImg1 },
@@ -18,6 +19,12 @@ const projectsSlides = [
 ];
 
 export const Carousel = () => {
+  const buttonStyles: CSSProperties = {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+  }
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -39,7 +46,8 @@ export const Carousel = () => {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            centerPadding: "10px",
           }
         }
       ]
@@ -53,7 +61,10 @@ export const Carousel = () => {
             <div key={id} className={sass.slide}>
               <img className={sass.slideImg} src={image} alt={text} />
               <p className={sass.slideText}>{text}</p>
-              <WantButton styles={{ position: "absolute", bottom: 0, width: "100%" }} />
+              <WantButton
+                text="more"
+                styles={buttonStyles}
+              />
             </div>
           ))
         }

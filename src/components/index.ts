@@ -5,6 +5,7 @@ import { Title } from "./Title";
 import { Logo } from "./Logo";
 import { Carousel } from "./Carousel";
 import { WantButton } from "./WantButton";
+import { Footer } from "./Footer";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   Logo,
   Carousel,
   WantButton,
+  Footer,
 }

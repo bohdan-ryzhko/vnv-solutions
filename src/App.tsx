@@ -1,6 +1,11 @@
 import { FC } from "react";
-import { Header } from "./components";
-import { Hero, Projects, Services, WhyUs } from "./sections";
+import { Footer, Header } from "./components";
+import {
+  Hero,
+  Projects,
+  Services,
+  WhyUs,
+} from "./sections";
 
 import 'animate.css';
 import "slick-carousel/slick/slick.css"; 
@@ -14,6 +19,7 @@ const App: FC = () => {
       <WhyUs />
       <Services />
       <Projects />
+      <Footer />
     </div>
   );
 }
