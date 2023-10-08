@@ -18,3 +18,13 @@ export type ServicesSliceType = {
   isLoad: boolean,
   error: unknown,
 }
+
+export type Question = {
+  question: string,
+  answer: string,
+  id: string,
+}
+
+export type QuestionsSliceType = {
+  questions: Question[],
+}

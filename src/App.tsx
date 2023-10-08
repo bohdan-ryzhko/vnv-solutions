@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Footer, Header } from "./components";
 import {
+  FAQ,
   Hero,
   Projects,
   Services,
@@ -19,6 +20,7 @@ const App: FC = () => {
       <WhyUs />
       <Services />
       <Projects />
+      <FAQ />
       <Footer />
     </div>
   );
