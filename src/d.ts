@@ -28,3 +28,16 @@ export type Question = {
 export type QuestionsSliceType = {
   questions: Question[],
 }
+
+export type ConnectSliceType = {
+  isLoad: boolean,
+  error: unknown,
+  data: ContactsValues | null,
+}
+
+export type ContactsValues = {
+  name: string;
+  phone: string,
+  comment: string,
+  option: string,
+}

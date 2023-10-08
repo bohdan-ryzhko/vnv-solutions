@@ -6,6 +6,8 @@ import { Logo } from "./Logo";
 import { WantButton } from "./WantButton";
 import { Footer } from "./Footer";
 import { CreateOrderButton } from "./CreateOrderButton";
+import { InputField } from "./InputField";
+import { Notifications } from "./Notifications";
 
 export {
   Header,
@@ -16,4 +18,6 @@ export {
   WantButton,
   Footer,
   CreateOrderButton,
+  InputField,
+  Notifications,
 }

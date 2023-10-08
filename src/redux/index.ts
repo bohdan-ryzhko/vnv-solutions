@@ -1,3 +1,4 @@
+import { createComment } from './connect/operations';
 import { selectQuestions, selectServices } from './selectors';
 import { store } from "./store";
 
@@ -8,4 +9,5 @@ export {
   store,
   selectServices,
   selectQuestions,
+  createComment,
 };

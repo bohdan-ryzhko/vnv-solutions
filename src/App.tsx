@@ -1,6 +1,7 @@
 import { FC } from "react";
-import { Footer, Header } from "./components";
+import { Footer, Header, Notifications } from "./components";
 import {
+  Contacts,
   FAQ,
   Hero,
   Projects,
@@ -20,8 +21,10 @@ const App: FC = () => {
       <WhyUs />
       <Services />
       <Projects />
+      <Contacts />
       <FAQ />
       <Footer />
+      <Notifications />
     </div>
   );
 }

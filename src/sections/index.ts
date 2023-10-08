@@ -1,3 +1,4 @@
+import { Contacts } from "./Contacts";
 import { FAQ } from "./FAQ";
 import { Hero } from "./Hero";
 import { Projects } from "./Projects";
@@ -10,4 +11,5 @@ export {
   WhyUs,
   Projects,
   FAQ,
+  Contacts,
 }
