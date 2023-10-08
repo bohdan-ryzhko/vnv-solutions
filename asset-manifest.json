@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vnv-solutions/static/css/main.44d9541d.css",
-    "main.js": "/vnv-solutions/static/js/main.0d57131e.js",
+    "main.css": "/vnv-solutions/static/css/main.7659d8f3.css",
+    "main.js": "/vnv-solutions/static/js/main.e674981e.js",
     "static/js/787.08708b2c.chunk.js": "/vnv-solutions/static/js/787.08708b2c.chunk.js",
     "static/media/why-us-bg.jpg": "/vnv-solutions/static/media/why-us-bg.202ba7561bbb67dc41d2.jpg",
     "index.html": "/vnv-solutions/index.html",
-    "main.44d9541d.css.map": "/vnv-solutions/static/css/main.44d9541d.css.map",
-    "main.0d57131e.js.map": "/vnv-solutions/static/js/main.0d57131e.js.map",
+    "main.7659d8f3.css.map": "/vnv-solutions/static/css/main.7659d8f3.css.map",
+    "main.e674981e.js.map": "/vnv-solutions/static/js/main.e674981e.js.map",
     "787.08708b2c.chunk.js.map": "/vnv-solutions/static/js/787.08708b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44d9541d.css",
-    "static/js/main.0d57131e.js"
+    "static/css/main.7659d8f3.css",
+    "static/js/main.e674981e.js"
   ]
 }
