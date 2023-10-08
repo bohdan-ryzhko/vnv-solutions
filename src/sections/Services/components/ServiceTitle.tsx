@@ -1,5 +1,5 @@
-import { FC } from "react";
 import sass from "../Services.module.scss";
+import { FC } from "react";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../redux";
 import { setCurrentService } from "../../../redux/services";

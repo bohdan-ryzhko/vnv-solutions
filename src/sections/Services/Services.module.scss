@@ -10,7 +10,11 @@
 	background-color: $secondary-color;
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
-	padding: 15px 30px;
+	padding: 25px 30px;
+}
+
+.serviceTitle {
+	flex-basis: calc(100% / 5 - 10px);
 }
 
 .serviceButton,
@@ -52,4 +56,69 @@
 	overflow: hidden;
 	background-color: $secondary-color;
 	color: $main-color;
+	padding: 15px;
+
+	@include tablet {
+		padding: 60px 0 60px 30px;
+	}
+}
+
+.descriptionBox {
+	& > img {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.descriptionTitle,
+.descriptionText {
+	font-size: 20px;
+
+	@include mobile {
+		font-size: 25px;
+	}
+}
+
+.descriptionBox {
+	&:first-child {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		text-align: center;
+
+		@include tablet {
+			text-align: left;
+		}
+	}
+}
+
+.descriptionBox {
+	@include tablet {
+		flex-basis: 50%;
+	}
+}
+
+.descriptionBenefitTitle {
+	font-size: 18px;
+}
+
+.descriptionBenefits {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	text-align: left;
+
+	@include tablet {
+		margin: 0;
+	}
+}
+
+.descriptionBenefit {
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }

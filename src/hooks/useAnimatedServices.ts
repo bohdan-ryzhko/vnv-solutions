@@ -2,19 +2,21 @@ import { useEffect, useState } from "react";
 import { Service } from "../d";
 
 export const useAnimatedServices = (currentService: Service) => {
-  const [isAnimated, setIsAnimated] = useState<boolean>(false);
+  const [isAnimated, setIsAnimated] = useState<boolean>(true);
 
   useEffect(() => {
     setIsAnimated(false);
     const animatedElement = document.querySelector(".services__box");
 
     setTimeout(() => {
-      animatedElement?.classList.add("animate__fadeOutUp");
       setIsAnimated(true);
+      animatedElement?.classList.add("animate__fadeInUp");
     }, 10);
-
+    
     return () => {
-      animatedElement?.classList.remove("animate__fadeOutUp");
+      animatedElement?.classList.remove("animate__fadeInUp");
+      console.log('unmount')
+      setIsAnimated(false);
     }
   }, [currentService]);
 

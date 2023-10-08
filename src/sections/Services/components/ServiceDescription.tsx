@@ -1,7 +1,7 @@
 import sass from "../Services.module.scss";
 import { useReduxState } from "../../../hooks";
 import { FC } from "react";
-import { AnimatedBoxes } from "./AnimatedBoxes";
+import { AnimatedBoxe } from "./AnimatedBoxe";
 
 export const ServiceDescription: FC = () => {
   const { services } = useReduxState();
@@ -10,7 +10,7 @@ export const ServiceDescription: FC = () => {
     <div className={sass.descriptionWrapper}>
       {
         services.services.length > 0 &&
-        <AnimatedBoxes currentService={services.services[services.currentService]} />
+        <AnimatedBoxe currentService={services.services[services.currentService]} />
       }
     </div>
   )

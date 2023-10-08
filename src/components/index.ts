@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { Title } from "./Title";
 import { Logo } from "./Logo";
 import { Carousel } from "./Carousel";
+import { WantButton } from "./WantButton";
 
 export {
   Header,
@@ -12,4 +13,5 @@ export {
   MagnitButton,
   Logo,
   Carousel,
+  WantButton,
 }
