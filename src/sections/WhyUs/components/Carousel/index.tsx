@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { CreateOrderButton } from "./components";
+import { CreateOrderButton } from "../../../../components";
 
 const slides = [
   { id: "1", text: "Technical Expertise: An IT company possesses high technical proficiency and experience in the field of information technology, enabling it to deliver high-quality services and solutions." },

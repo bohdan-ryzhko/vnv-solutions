@@ -31,6 +31,7 @@ export const Carousel = () => {
     infinite: true,
     centerPadding: "50px",
     slidesToShow: 3,
+    arrows: false,
     speed: 600,
 
     responsive: [
