@@ -11,14 +11,22 @@ type QuestionProps = {
 export const QuestionItem: FC<QuestionProps> = ({ question }) => {
   const [isOpenAnswer, setIsOpenAnswer] = useState<boolean>(false);
 
+  const toggleQuestion = () => {
+    setIsOpenAnswer((prev) => !prev);
+  }
+
   return (
-    <li className={sass.questionItem}>
+    <li onClick={toggleQuestion} className={isOpenAnswer ? sass.questionItemActive : sass.questionItem}>
       <div className={sass.question}>
         <p className={sass.questionText}>{question.question}</p>
-        <div className={sass.questionIcon}>
+        <div className={isOpenAnswer ? sass.questionIconActive : sass.questionIcon}>
           <AiOutlineDown size={25} />
         </div>
       </div>
+      {
+        isOpenAnswer && 
+        <p>{question.answer}</p>
+      }
     </li>
   )
 };

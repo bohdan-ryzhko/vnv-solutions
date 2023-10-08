@@ -3,7 +3,7 @@ import { QuestionsSliceType } from "../../d";
 
 const initialState: QuestionsSliceType = {
   questions: [
-    { question: "Is it necessary to sign a contract before work?", answer: "Yes, after discussing the work plan, we sign a contract together using a digital signature.", id: "1" },
+    { question: "Is it necessary to sign a contract before work?", answer: "Yes, after discussing the work plan, we sign a contract together using a digital signature. The contract regulates the entire process of work, payments, any unforeseen circumstances, and other important parts of the project. This document protects both parties - both the client and the contractor.", id: "1" },
     { question: "How is the payment made?", answer: "There are two payment options: full prepayment and stage-by-stage prepayment. Full prepayment involves transferring the entire amount for the project upfront. Stage-by-stage prepayment involves paying in installments for each stage (or several stages).", id: "2" },
     { question: "Is it possible to refund money after payment?", answer: "Yes, it is possible. Here's how it works: in any case, a 5% fee and bank commission are deducted from the refund amount. Money is refunded only for the project stages that have not been started. All work that has been completed and paid for is delivered to the client. Stages that have been started are always completed (if the client wishes).", id: "3" },
     { question: "Can you improve an existing website?", answer: "No, only create a website from scratch. An existing website can be used as an example for design, content, and other aspects, but it does not reduce the cost of the service.", id: "4" },
