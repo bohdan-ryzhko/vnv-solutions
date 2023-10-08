@@ -20,7 +20,7 @@ export const Carousel: FC = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '"></span>';
+      return '<span style="width: 15px; height: 15px; background-color: #fff" class="' + className + '"></span>';
     },
   };
   return (
@@ -36,9 +36,11 @@ export const Carousel: FC = () => {
         {
           slides.map(({ text }) => (
             <SwiperSlide>
-              <div className={sass.wrapperTitle} data-swiper-parallax="-100">
-                <h4 className={sass.title}>{text}</h4>
-                <CreateOrderButton />
+              <div className={sass.sliderBody}>
+                <div className={sass.wrapperTitle} data-swiper-parallax="-100">
+                  <h4 className={sass.title}>{text}</h4>
+                  <CreateOrderButton />
+                </div>
               </div>
             </SwiperSlide>
           ))

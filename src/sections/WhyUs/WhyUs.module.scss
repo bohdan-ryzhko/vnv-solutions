@@ -2,9 +2,12 @@
 
 .sectionWhyUs {
 	height: 500px;
-	margin-bottom: 50px;
 
 	@include desktop {
 		height: 700px;
 	}
+
+	max-width: 1920px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }

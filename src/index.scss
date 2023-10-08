@@ -62,18 +62,3 @@ button {
 	background-color: transparent;
 	cursor: pointer;
 }
-
-.swiper-pagination-bullet {
-	width: 20px !important;
-	height: 20px !important;
-	background: #ffffffac !important;
-	opacity: 1 !important;
-	transition: all 800ms ease !important;
-}
-
-.swiper-pagination-bullet-active {
-	width: 50px !important;
-	background: #fff !important;
-	border-radius: 15px !important;
-	transition: all 800ms ease !important;
-}
