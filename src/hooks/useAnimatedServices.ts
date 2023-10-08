@@ -15,7 +15,6 @@ export const useAnimatedServices = (currentService: Service) => {
     
     return () => {
       animatedElement?.classList.remove("animate__fadeInUp");
-      console.log('unmount')
       setIsAnimated(false);
     }
   }, [currentService]);

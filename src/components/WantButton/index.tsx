@@ -1,9 +1,13 @@
 import "./WantButton.scss";
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 
-export const WantButton: FC = () => {
+type WantButtonProps = {
+  styles?: CSSProperties,
+}
+
+export const WantButton: FC<WantButtonProps> = ({ styles }) => {
   return (
-    <div className="button">
+    <div style={styles} className="button">
       <button className="link">want</button>
     </div>
   )

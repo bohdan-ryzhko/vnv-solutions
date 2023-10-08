@@ -73,3 +73,8 @@ button {
 		flex-direction: row;
 	}
 }
+
+.slick-track {
+	display: flex !important;
+	gap: 20px !important;
+}
