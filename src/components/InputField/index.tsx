@@ -9,18 +9,23 @@ type InputFieldProps = {
 }
 
 export const InputField: FC<InputFieldProps> = ({ formik, name }) => {
+  const isError = formik.touched[name] && formik.errors[name];
   return (
     <>
-      <label className={sass.label} htmlFor={name}>
+      <label className={isError ? sass.labelError : sass.label} htmlFor={name}>
         {name}
         <input
-          className={sass.input}
+          className={isError ? sass.inputError : sass.input}
           id={name}
           name={name}
           type="text"
+          onBlur={formik.handleBlur}
           onChange={formik.handleChange}
           value={formik.values[name]}
         />
+        {
+          isError && <p className={sass.errorText}>{formik.errors[name]}</p>
+        }
       </label>
     </>
   );

@@ -12,7 +12,7 @@ import * as Yup from 'yup';
 const validationSchema = Yup.object({
   name: Yup
     .string()
-    .min(5, 'Minimum 5 characters')
+    .min(2, 'Minimum 2 characters')
     .required('Required'),
   phone: Yup
     .string()
@@ -47,14 +47,12 @@ export const Form: FC = () => {
     formikHelpers.resetForm();
   }
 
-  
   const formik = useFormik({
     initialValues,
     onSubmit,
     validationSchema,
   });
-  
-  console.log(formik.errors);
+
   return (
     <form
       className={sass.form}

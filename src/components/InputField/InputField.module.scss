@@ -1,16 +1,35 @@
 @import "../../sass/helper";
 
-.label {
+.label,
+.labelError {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 	text-transform: capitalize;
 }
 
-.input {
+.labelError {
+	color: rgb(204, 74, 51);
+}
+
+.input,
+.inputError {
 	height: 40px;
 	border-radius: 10px;
 	padding: 5px 10px;
 	font-size: 18px;
 	background-color: $fields-color;
+}
+
+.inputError {
+	border: 2px solid rgb(204, 74, 51);
+}
+
+.errorText {
+	position: absolute;
+	bottom: -20px;
+	left: 10px;
+	color: rgb(204, 74, 51);
+	font-size: 14px;
 }
