@@ -1,30 +1,41 @@
+import sass from "../Contacts.module.scss";
 import { FormikHelpers, useFormik } from "formik";
 import { FC } from "react";
 import { FormSelect } from "./FormSelect";
 import { ContactsValues } from "../../../d";
-import { InputField } from "../../../components";
+import { InputField, SubmitButton } from "../../../components";
 import { options } from "../../../constants";
 import { useDispatch } from "react-redux";
 import { AppDispatch, createComment } from "../../../redux";
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object({
-  name: Yup.string()
+  name: Yup
+    .string()
     .min(5, 'Minimum 5 characters')
     .required('Required'),
-  phone: Yup.string()
-    .min(5, 'Minimum 5 characters')
+  phone: Yup
+    .string()
+    .matches(/^[0-9]+$/, 'Phone must contain only digits')
+    .max(10, 'Minimum 10 characters')
     .required('Required'),
-  comment: Yup.string(),
-  option: Yup.string()
-  .oneOf(options.map(({ value }) => value), 'Invalid option')
-  .required('Required'),
+  email: Yup
+    .string()
+    .email()
+    .required('Required'),
+  comment: Yup
+    .string(),
+  option: Yup
+    .string()
+    .oneOf(options.map(({ value }) => value), 'Invalid option')
+    .required('Required'),
 });
 
 const initialValues: ContactsValues = {
   name: "",
   phone: "",
   comment: "",
+  email: "",
   option: options[0].value,
 }
 
@@ -36,19 +47,27 @@ export const Form: FC = () => {
     formikHelpers.resetForm();
   }
 
+  
   const formik = useFormik({
     initialValues,
     onSubmit,
     validationSchema,
   });
-
+  
+  console.log(formik.errors);
   return (
-    <form onSubmit={formik.handleSubmit}>
-      <InputField formik={formik} name="name" />
-      <InputField formik={formik} name="phone" />
-      <textarea name="comment" id="comment" onChange={formik.handleChange} value={formik.values.comment}></textarea>
-      <FormSelect values={formik.values} />
-      <button type="submit">Submit</button>
+    <form
+      className={sass.form}
+      onSubmit={formik.handleSubmit}
+    >
+      <div className={sass.formBody}>
+        <InputField formik={formik} name="email" />
+        <InputField formik={formik} name="name" />
+        <InputField formik={formik} name="phone" />
+        <textarea className={sass.message} name="comment" id="comment" onChange={formik.handleChange} value={formik.values.comment}></textarea>
+        <FormSelect values={formik.values} />
+        <SubmitButton />
+      </div>
     </form>
   );
 }

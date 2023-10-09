@@ -8,6 +8,7 @@ import { Footer } from "./Footer";
 import { CreateOrderButton } from "./CreateOrderButton";
 import { InputField } from "./InputField";
 import { Notifications } from "./Notifications";
+import { SubmitButton } from "./SubmitButton";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   CreateOrderButton,
   InputField,
   Notifications,
+  SubmitButton,
 }

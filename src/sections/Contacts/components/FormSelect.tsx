@@ -12,7 +12,8 @@ export const FormSelect: FC<FormSelectProps> = ({ values }) => {
   const colourStyles: StylesConfig = {
     control: (styles) => ({
       ...styles,
-      borderRadius: 40,
+      backgroundColor: "#d8d8d8",
+      borderRadius: 10,
       padding: 10
     }),
     option: (styles, { isFocused }) => ({
@@ -23,13 +24,14 @@ export const FormSelect: FC<FormSelectProps> = ({ values }) => {
 
     menu: (styles) => ({
       ...styles,
-      borderRadius: 40,
+      borderRadius: 10,
       padding: 10,
     }),
   };
 
   return (
     <>
+      <p>How to contact us?</p>
       <Select
         defaultValue={options[0]}
         options={options}

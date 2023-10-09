@@ -7,8 +7,8 @@ export const Contacts: FC = () => {
   return (
     <section className={sass.sectionContacts}>
       <Container>
-        <Title title="Contacts" />
         <div className={sass.contactsInner}>
+          <Title title="Have an idea? Tell us about it" />
           <Form />
         </div>
       </Container>

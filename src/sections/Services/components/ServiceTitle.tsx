@@ -25,6 +25,7 @@ export const ServiceTitle: FC<ServiceTitleProps> = ({ text, id }) => {
   return (
     <li className={sass.serviceTitle}>
       <button
+        type="button"
         className={defineActiveService}
         onClick={handleChangeCurrentService}
       >

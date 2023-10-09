@@ -11,15 +11,17 @@ type InputFieldProps = {
 export const InputField: FC<InputFieldProps> = ({ formik, name }) => {
   return (
     <>
-      <label className={sass.label} htmlFor={name}>{name}</label>
-      <input
-        className={sass.input}
-        id={name}
-        name={name}
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values[name]}
-      />
+      <label className={sass.label} htmlFor={name}>
+        {name}
+        <input
+          className={sass.input}
+          id={name}
+          name={name}
+          type="text"
+          onChange={formik.handleChange}
+          value={formik.values[name]}
+        />
+      </label>
     </>
   );
 }

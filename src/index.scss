@@ -63,6 +63,20 @@ button {
 	cursor: pointer;
 }
 
+input {
+	border: none;
+
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+textarea {
+	&:focus-visible {
+		outline: none;
+	}
+}
+
 .services__box {
 	display: flex;
 	flex-direction: column;

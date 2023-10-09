@@ -40,4 +40,6 @@ export type ContactsValues = {
   phone: string,
   comment: string,
   option: string,
+  email: string,
+  id?: string,
 }

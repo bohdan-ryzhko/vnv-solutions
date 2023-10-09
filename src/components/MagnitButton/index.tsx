@@ -20,7 +20,7 @@ export const MagnitButton: FC<MagnitButtonProps> = ({ text, href }) => (
           </a>
         )
         : (
-          <button className={sass.buttonAnimation}>
+          <button type="button" className={sass.buttonAnimation}>
             {text}
             <span></span>
             <span></span>

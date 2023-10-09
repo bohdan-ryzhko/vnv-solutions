@@ -1,0 +1,76 @@
+.submitWrapper {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+}
+
+.submit {
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+}
+
+.submitWrapper {
+	border: none;
+	font-size: 30px;
+	height: 100px;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+}
+.submitWrapper:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	transition: all 1s;
+}
+.submitWrapper:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	transition: all 1s;
+}
+.submitWrapper:hover:before {
+	left: 0;
+}
+.submitWrapper:hover:after {
+	right: 0;
+}
+.span:before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	right: 0%;
+	width: 4px;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	transition: all 1s;
+}
+.submitWrapper:hover .span:before {
+	top: 0;
+}
+.span:after {
+	content: "";
+	position: absolute;
+	bottom: -100%;
+	left: 0%;
+	width: 4px;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	transition: all 1s;
+}
+.submitWrapper:hover .span:after {
+	bottom: 0;
+}

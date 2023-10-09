@@ -8,7 +8,7 @@ type BurgerButtonProps = {
 
 export const BurgerButton: FC<BurgerButtonProps> = ({ click, isOpenMenu }) => {
   return (
-    <button onClick={click} className={isOpenMenu? sass.burgerBtnActive : sass.burgerBtn}>
+    <button type="button" onClick={click} className={isOpenMenu? sass.burgerBtnActive : sass.burgerBtn}>
       <div className={sass.burgerBtnInner}>
         <span className={isOpenMenu ? sass.burgerLineActive : sass.burgerLine} />
         <span className={isOpenMenu ? sass.burgerLineActive : sass.burgerLine} />
