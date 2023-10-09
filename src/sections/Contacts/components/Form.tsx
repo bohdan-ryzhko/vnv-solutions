@@ -17,7 +17,7 @@ const validationSchema = Yup.object({
   phone: Yup
     .string()
     .matches(/^[0-9]+$/, 'Phone must contain only digits')
-    .max(10, 'Minimum 10 characters')
+    .max(10, 'Maximum 10 characters')
     .required('Required'),
   email: Yup
     .string()
@@ -62,7 +62,13 @@ export const Form: FC = () => {
         <InputField formik={formik} name="email" />
         <InputField formik={formik} name="name" />
         <InputField formik={formik} name="phone" />
-        <textarea className={sass.message} name="comment" id="comment" onChange={formik.handleChange} value={formik.values.comment}></textarea>
+        <textarea
+          placeholder="Write your idea..."
+          className={sass.message}
+          name="comment"
+          id="comment"
+          onChange={formik.handleChange}
+          value={formik.values.comment}></textarea>
         <FormSelect values={formik.values} />
         <SubmitButton />
       </div>

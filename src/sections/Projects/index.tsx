@@ -5,7 +5,7 @@ import { Title } from "../../components";
 
 export const Projects: FC = () => {
   return (
-    <section className={sass.profectsSection}>
+    <section id="projects" className={sass.profectsSection}>
       <Title title="Projects" />
       <Carousel />
     </section>

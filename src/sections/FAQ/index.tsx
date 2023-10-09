@@ -5,7 +5,7 @@ import { QuestionAnswerBoard } from "./components";
 
 export const FAQ: FC = () => {
   return (
-    <section className={sass.sectionFaq}>
+    <section id="questions" className={sass.sectionFaq}>
       <Container>
         <div className={sass.faqSection}>
           <Title title="FAQ" />

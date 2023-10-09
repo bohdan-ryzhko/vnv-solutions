@@ -9,19 +9,23 @@ import { useScroll } from "../../hooks";
 export const Header: FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useScroll();
 
+  const handleToggleMenu = () => {
+    setIsOpenMenu((prev) => !prev)
+  }
+
   return (
     <header className={sass.header}>
       <Container>
         <div className={sass.headerInner}>
           <Logo />
           <BurgerButton
-            click={() => setIsOpenMenu((prev) => !prev)}
+            click={handleToggleMenu}
             isOpenMenu={isOpenMenu}
           />
           <DesktopNavigation />
         </div>
       </Container>
-      <MobileNavigation isOpenMenu={isOpenMenu} />
+      <MobileNavigation isOpenMenu={isOpenMenu} click={handleToggleMenu} />
     </header>
   )
 };

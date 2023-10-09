@@ -17,3 +17,23 @@
 .backdropActive {
 	top: 0;
 }
+
+.navigation {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigationList {
+	color: $main-color;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.link {
+	font-size: 30px;
+	text-transform: capitalize;
+}

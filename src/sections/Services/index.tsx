@@ -8,7 +8,7 @@ export const Services: FC = () => {
   useFetchServices();
 
   return (
-    <section className={sass.servicesSection}>
+    <section id="services" className={sass.servicesSection}>
       <Container>
         <div className={sass.servicesInner}>
           <Title title="Services" />
