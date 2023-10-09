@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/vnv-solutions/static/css/main.f2e38674.css",
-    "main.js": "/vnv-solutions/static/js/main.f2efd541.js",
+    "main.js": "/vnv-solutions/static/js/main.f62bd323.js",
     "static/js/787.08708b2c.chunk.js": "/vnv-solutions/static/js/787.08708b2c.chunk.js",
     "static/media/why-us-bg.jpg": "/vnv-solutions/static/media/why-us-bg.202ba7561bbb67dc41d2.jpg",
-    "static/media/carousel-img-1.jpg": "/vnv-solutions/static/media/carousel-img-1.fbe2b6cde853eb3d03ef.jpg",
-    "static/media/carousel-img-5.jpg": "/vnv-solutions/static/media/carousel-img-5.6663441dfa507c4f3699.jpg",
-    "static/media/carousel-img-2.jpg": "/vnv-solutions/static/media/carousel-img-2.721f6abd5d1309245623.jpg",
-    "static/media/carousel-img-4.jpg": "/vnv-solutions/static/media/carousel-img-4.11cf0eb49d8ebe61873a.jpg",
-    "static/media/carousel-img-3.jpg": "/vnv-solutions/static/media/carousel-img-3.242d2e226908372b9118.jpg",
+    "static/media/carousel-img-1.jpg": "/vnv-solutions/static/media/carousel-img-1.db8593a969313c6c99e8.jpg",
+    "static/media/carousel-img-5.jpg": "/vnv-solutions/static/media/carousel-img-5.ce1f0c9755f3af183552.jpg",
+    "static/media/carousel-img-4.jpg": "/vnv-solutions/static/media/carousel-img-4.ef9b7991a9dea2346c01.jpg",
+    "static/media/carousel-img-2.jpg": "/vnv-solutions/static/media/carousel-img-2.8fffbbd0cfc030770b91.jpg",
+    "static/media/carousel-img-3.jpg": "/vnv-solutions/static/media/carousel-img-3.ba936cb1b9da5b6cff08.jpg",
     "static/media/slick.svg": "/vnv-solutions/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/vnv-solutions/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/vnv-solutions/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/vnv-solutions/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/vnv-solutions/index.html",
     "main.f2e38674.css.map": "/vnv-solutions/static/css/main.f2e38674.css.map",
-    "main.f2efd541.js.map": "/vnv-solutions/static/js/main.f2efd541.js.map",
+    "main.f62bd323.js.map": "/vnv-solutions/static/js/main.f62bd323.js.map",
     "787.08708b2c.chunk.js.map": "/vnv-solutions/static/js/787.08708b2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2e38674.css",
-    "static/js/main.f2efd541.js"
+    "static/js/main.f62bd323.js"
   ]
 }
