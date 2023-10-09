@@ -12,16 +12,10 @@ import {
 import 'animate.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { useOpenModal, useScroll } from "./hooks";
+import { useScroll } from "./hooks";
 
 const App: FC = () => {
   const [isModalOpen, setIsModalOpen] = useScroll();
-
-  const handleToggleModal = () => {
-    setIsModalOpen((prev) => !prev);
-  }
-
-  useOpenModal({ seconds: 15, handleToggleModal });
 
   return (
     <div className="App">
@@ -36,7 +30,7 @@ const App: FC = () => {
       <Notifications />
       <Modal
         open={isModalOpen}
-        handleToggle={handleToggleModal}
+        handleToggle={setIsModalOpen}
         title="Get a free consultation right now!"
       >
         <Form />

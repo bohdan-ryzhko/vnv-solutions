@@ -1,12 +1,13 @@
 import sass from "./Modal.module.scss";
-import { FC, ReactNode } from "react";
+import { Dispatch, FC, ReactNode, SetStateAction } from "react";
 import { AiOutlineClose } from 'react-icons/ai';
+import { useOpenModal } from "../../hooks";
 
 type ModalProps = {
   title: string,
   children: ReactNode,
   open: boolean,
-  handleToggle: () => void,
+  handleToggle: Dispatch<SetStateAction<boolean>>,
 }
 
 export const Modal: FC<ModalProps> = ({
@@ -15,6 +16,9 @@ export const Modal: FC<ModalProps> = ({
   handleToggle,
   open
 }) => {
+
+  useOpenModal({ seconds: 15, handleToggle });
+
   return (
     <div
       className={open ? sass.backdropActive : sass.backdrop}
@@ -25,7 +29,7 @@ export const Modal: FC<ModalProps> = ({
           <button
           type="button"
           className={sass.modalClose}
-          onClick={handleToggle}
+          onClick={() => handleToggle(false)}
         >
           <AiOutlineClose size={30}/>
         </button>
