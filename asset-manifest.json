@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vnv-solutions/static/css/main.f2e38674.css",
-    "main.js": "/vnv-solutions/static/js/main.f62bd323.js",
+    "main.css": "/vnv-solutions/static/css/main.da98e816.css",
+    "main.js": "/vnv-solutions/static/js/main.a16f960b.js",
     "static/js/787.08708b2c.chunk.js": "/vnv-solutions/static/js/787.08708b2c.chunk.js",
     "static/media/why-us-bg.jpg": "/vnv-solutions/static/media/why-us-bg.202ba7561bbb67dc41d2.jpg",
     "static/media/carousel-img-1.jpg": "/vnv-solutions/static/media/carousel-img-1.db8593a969313c6c99e8.jpg",
@@ -14,12 +14,12 @@
     "static/media/slick.ttf": "/vnv-solutions/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/vnv-solutions/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/vnv-solutions/index.html",
-    "main.f2e38674.css.map": "/vnv-solutions/static/css/main.f2e38674.css.map",
-    "main.f62bd323.js.map": "/vnv-solutions/static/js/main.f62bd323.js.map",
+    "main.da98e816.css.map": "/vnv-solutions/static/css/main.da98e816.css.map",
+    "main.a16f960b.js.map": "/vnv-solutions/static/js/main.a16f960b.js.map",
     "787.08708b2c.chunk.js.map": "/vnv-solutions/static/js/787.08708b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2e38674.css",
-    "static/js/main.f62bd323.js"
+    "static/css/main.da98e816.css",
+    "static/js/main.a16f960b.js"
   ]
 }
