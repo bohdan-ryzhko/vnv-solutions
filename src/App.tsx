@@ -21,7 +21,7 @@ const App: FC = () => {
     setIsModalOpen((prev) => !prev);
   }
 
-  useOpenModal({ seconds: 10, handleToggleModal });
+  useOpenModal({ seconds: 15, handleToggleModal });
 
   return (
     <div className="App">

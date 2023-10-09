@@ -13,22 +13,22 @@ export const Footer: FC = () => {
         <div className={sass.footerInner}>
           <ul className={sass.socialList}>
             <li className={sass.socialItem}>
-              <a className={sass.socialLink} href="#cew">
+              <a className={sass.socialLink} href="#instagram-page">
                 <FaInstagram size={30} />
               </a>
             </li>
             <li className={sass.socialItem}>
-              <a className={sass.socialLink} href="#cew">
+              <a className={sass.socialLink} href="#telegram-page">
                 <BiLogoTelegram size={30} />
               </a>
             </li>
             <li className={sass.socialItem}>
-              <a className={sass.socialLink} href="#cew">
+              <a className={sass.socialLink} href="#tiktok-page">
                 <BsTiktok size={30} />
               </a>
             </li>
             <li className={sass.socialItem}>
-              <a className={sass.socialLink} href="#cew">
+              <a className={sass.socialLink} href="#whatsapp-page">
                 <BsWhatsapp size={30} />
               </a>
             </li>
