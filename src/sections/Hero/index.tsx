@@ -16,7 +16,7 @@ export const Hero: FC = () => {
               <br />
               for your business
             </h1>
-            <MagnitButton text="order" href="#create-roder" />
+            <MagnitButton text="order" href="#contacts" />
           </div>
         </div>
       </Container>

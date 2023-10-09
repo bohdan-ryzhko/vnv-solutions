@@ -1,0 +1,59 @@
+@import "../../sass/helper";
+
+.backdrop,
+.backdropActive {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff7f;
+	z-index: 1000;
+	transition: all 700ms ease;
+}
+
+.backdrop {
+	transform: translateX(300%);
+}
+
+.backdropActive {
+	transform: translateX(0);
+}
+
+.modalBody {
+	min-height: 50%;
+	width: 100%;
+	background-color: $main-color;
+	padding: 15px;
+	border-radius: 20px;
+	position: relative;
+
+	@include tablet {
+		width: 70%;
+	}
+
+	@include desktop {
+		width: 70%;
+	}
+}
+
+.modalClose {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border: 1px solid $secondary-color;
+	transition: all 400ms ease;
+
+	&:hover {
+		transform: rotate(90deg);
+	}
+}

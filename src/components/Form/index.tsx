@@ -1,12 +1,12 @@
-import sass from "../Contacts.module.scss";
+import sass from "./Form.module.scss";
 import { FormikHelpers, useFormik } from "formik";
 import { FC } from "react";
-import { FormSelect } from "./FormSelect";
-import { ContactsValues } from "../../../d";
-import { InputField, SubmitButton } from "../../../components";
-import { options } from "../../../constants";
+import { FormSelect } from "./components";
+import { InputField, SubmitButton } from "../index";
 import { useDispatch } from "react-redux";
-import { AppDispatch, createComment } from "../../../redux";
+import { AppDispatch, createComment } from "../../redux";
+import { options } from "../../constants";
+import { ContactsValues } from "../../d";
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object({

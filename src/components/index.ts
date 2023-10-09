@@ -9,6 +9,8 @@ import { CreateOrderButton } from "./CreateOrderButton";
 import { InputField } from "./InputField";
 import { Notifications } from "./Notifications";
 import { SubmitButton } from "./SubmitButton";
+import { Form } from "./Form";
+import { Modal } from "./Modal";
 
 export {
   Header,
@@ -22,4 +24,6 @@ export {
   InputField,
   Notifications,
   SubmitButton,
+  Form,
+  Modal,
 }
